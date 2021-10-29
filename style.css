@@ -2,3 +2,32 @@
   margin: 0;
   padding: 0;
 }
+.container {
+  display: flex;
+  /* Hướng box từ trái qua phải cùng 1 dòng */
+  flex-direction: row;
+  /* Tự động xuống dòng nếu kích thước nhỏ */
+  flex-wrap: wrap;
+  height: auto;
+  margin: 12px;
+  gap: 12px;
+}
+.formSinhVien {
+  padding: 10px;
+  width: 300px;
+  border: solid 1px;
+  background-color: antiquewhite;
+}
+
+label {
+  margin-right: 10px;
+}
+.dataTable {
+  border: solid 1px;
+  flex: auto;
+  width: 600px;
+  background-color: antiquewhite;
+}
+table td {
+  border: solid 1px;
+}

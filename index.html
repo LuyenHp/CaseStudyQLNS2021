@@ -8,9 +8,62 @@
     <title>QLNS</title>
   </head>
   <body>
-    <div>
-      <h1>Quản lý nhân sự</h1>
-      <script src="script.js"></script>
-    </div>
+    <h1>Quản lý nhân sự</h1>
+    <div class="container">
+      
+      <div class="formSinhVien">
+        <h1>Form nhập liệu</h1>
+        <div>
+          <label>Họ và tên:</label>
+          <input type="text" id="FullName" placeholder="Nhập họ và tên" />
+          <br />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input
+            type="text"
+            id="Email"
+            placeholder="Nhập địa chỉ Email của bạn"
+          />
+          <br/>
+        </div>
+        <div>
+          <label>Địa chỉ:</label>
+          <input type="text" id="DiaChi" placeholder="Nhập địa chỉ của bạn" />
+          <br />
+        </div>
+        <div>
+          <label>Ngày sinh</label>
+          <input type="date" id="NgaySinh" />
+          <br />
+        </div>
+        <div>
+          <label>Giới tính</label>
+          <select id= "GioiTinh">
+            <option>Nam</option>
+            <option>Nữ</option>
+          </select>
+          <br>
+          <button id="click" onclick="nhapData()">Nhập</button>
+        </div>
+      </div>
+      <div class="dataTable">
+        <h1 id="dataBase">Bảng dữ liệu</h1>
+        <table>
+          <thead>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </thead>
+          <tr>
+            <td id  = "Row1" ></td>
+            <td>Tên</td>
+            <td>Tên</td>
+          </tr>
+         
+        </table>
+      </div>
+     
+    <script src="script.js"></script>
   </body>
 </html>
