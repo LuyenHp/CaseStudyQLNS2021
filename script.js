@@ -11,7 +11,9 @@ function nhapData() {
     (NgaySinh != "") &
     (GioiTinh != "")
   ) {
-    alert(HoTen + Email + DiaChi + NgaySinh + GioiTinh);
+    // alert(HoTen + Email + DiaChi + NgaySinh + GioiTinh);
+    let thongTinSv = [HoTen, Email, DiaChi, NgaySinh, GioiTinh];
+    alert("Thong tin sinh vien: " + thongTinSv);
     taoMoi();
   }
 }
@@ -24,8 +26,3 @@ function taoMoi() {
     x.style.display = "block";
   }
 }
-function deleteDemo(a) {
-  demo = document.getElementById("HoTen");
-  console.log(`${demo} va ${a}`);
-}
-deleteDemo(12);
