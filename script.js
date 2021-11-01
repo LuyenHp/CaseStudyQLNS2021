@@ -12,5 +12,20 @@ function nhapData() {
     (GioiTinh != "")
   ) {
     alert(HoTen + Email + DiaChi + NgaySinh + GioiTinh);
+    taoMoi();
   }
 }
+function taoMoi() {
+  // document.getElementById("taoMoi").style.backgroundColor = "blue";
+  let x = document.getElementById("formSinhVien");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function deleteDemo(a) {
+  demo = document.getElementById("HoTen");
+  console.log(`${demo} va ${a}`);
+}
+deleteDemo(12);
