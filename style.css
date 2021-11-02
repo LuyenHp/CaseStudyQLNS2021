@@ -6,11 +6,11 @@ body {
   background-color: aqua;
 }
 .container {
-  display: flex;
+  /* display: flex; */
   /* Hướng box từ trái qua phải cùng 1 dòng */
-  flex-direction: row;
+  /* flex-direction: row; */
   /* Tự động xuống dòng nếu kích thước nhỏ */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   height: auto;
   margin: 10px 10px 10px 8px;
   gap: 12px;
@@ -19,15 +19,18 @@ body {
 #formSinhVien {
   display: none;
   padding: 10px;
-  width: auto;
+  width: 400px;
+  height: 500px;
   border: solid 1px;
   background-color: antiquewhite;
 }
 
 label {
   margin-right: 10px;
+  gap: 10px;
 }
-.dataTable {
+#dataTable {
+  /* display: block; */
   padding: 10px;
   border: solid 1px;
   flex: auto;
@@ -39,12 +42,13 @@ table td {
   border: solid 1px;
 }
 #formSinhVien div {
-  padding: 5px;
+  padding: 15px;
   margin: 15px;
 }
 #formSinhVien input {
   float: right;
-  width: 98%;
+  width: 100%;
+  height: 30px;
 }
 #formSinhVien label {
   font-style: italic;
@@ -69,10 +73,15 @@ h1 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  border-radius: 50%;
+  width: 60px;
+  height: 80px;
   display: inline-block;
 }
 button:hover {
   cursor: pointer;
   background-color: red;
+}
+.modal-content {
+  display: flex;
+  justify-content: center;
 }

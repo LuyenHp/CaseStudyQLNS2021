@@ -10,43 +10,59 @@
   <body>
     <h1>Quản lý nhân sự</h1>
     <div class="container">
-      <div id="formSinhVien">
-        <h1>Form nhập liệu</h1>
-        <div>
-          <label>Họ và tên:</label>
-          <input type="text" id="FullName" placeholder="Nhập họ và tên" />
-          <br />
+      <form class="modal-content">
+        <div id="formSinhVien">
+          <h1>Form nhập liệu</h1>
+          <div>
+            <label>Họ và tên:</label>
+            <input
+              type="text"
+              id="FullName"
+              placeholder="Nhập họ và tên"
+              required
+            />
+            <span id="iferrorFullName"></span>
+            <br />
+          </div>
+          <div>
+            <label>Email:</label>
+            <input
+              type="text"
+              id="Email"
+              placeholder="Nhập địa chỉ Email của bạn"
+              required
+            />
+            <br />
+          </div>
+          <div>
+            <label>Địa chỉ:</label>
+            <input
+              type="text"
+              id="DiaChi"
+              placeholder="Nhập địa chỉ của bạn"
+              required
+            />
+
+            <br />
+          </div>
+          <div>
+            <label>Ngày sinh:</label>
+            <input type="date" id="NgaySinh" required />
+
+            <br />
+          </div>
+          <div>
+            <label>Giới tính:</label>
+            <select id="GioiTinh" value="">
+              <option>Nam</option>
+              <option>Nữ</option>
+            </select>
+            <br />
+            <button id="click" onclick="nhapData()">Nhập</button>
+          </div>
         </div>
-        <div>
-          <label>Email:</label>
-          <input
-            type="text"
-            id="Email"
-            placeholder="Nhập địa chỉ Email của bạn"
-          />
-          <br />
-        </div>
-        <div>
-          <label>Địa chỉ:</label>
-          <input type="text" id="DiaChi" placeholder="Nhập địa chỉ của bạn" />
-          <br />
-        </div>
-        <div>
-          <label>Ngày sinh:</label>
-          <input type="date" id="NgaySinh" />
-          <br />
-        </div>
-        <div>
-          <label>Giới tính:</label>
-          <select id="GioiTinh">
-            <option>Nam</option>
-            <option>Nữ</option>
-          </select>
-          <br />
-          <button id="click" onclick="nhapData()">Nhập</button>
-        </div>
-      </div>
-      <div class="dataTable">
+      </form>
+      <div id="dataTable">
         <h1 id="dataBase">Bảng dữ liệu</h1>
         <table>
           <thead>
