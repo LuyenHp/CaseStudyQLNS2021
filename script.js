@@ -13,7 +13,7 @@ function nhapData() {
 
   if (
     HoTen.length > 2 &&
-    Email.length > 10 &&
+    Email.length > 3 &&
     DiaChi.length > 0 &&
     GioiTinh.length > 0
   ) {
