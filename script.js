@@ -18,7 +18,7 @@ function nhapData() {
     // GioiTinh.length > 0
   ) {
     let thongTinSv = [HoTen, Email, DiaChi, NgaySinh, GioiTinh];
-    // alert("Thong tin sinh vien: " + thongTinSv);
+    alert("Thong tin sinh vien: " + thongTinSv);
     taoMoi();
   }
   for (let i = 0; i < thongTinSv.length; i++) {}
